@@ -78,24 +78,29 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
-            "tsConfig": "tsconfig.spec.json",
             "assets": [
               {
                 "glob": "**/*",
                 "input": "public"
               }
             ],
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "scripts": [],
             "styles": [
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "tsConfig": "tsconfig.spec.json"
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "75d0c78a-ad2d-462b-80f1-5e48c153250f"
   }
 }
+
